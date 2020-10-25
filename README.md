@@ -56,6 +56,12 @@ A damage-over-time spell is applied to a player at a rate of 500 damage per one 
 
 If Flash Heal is cast 80 times over the course of the 2 minutes, this will result in 9,200 and 17,760 mana used in overhealing for Rank 4 and Rank 7, respectively. That mana equates to 35,088 and 56,084 health.
 
+> Example: Mana Cost for Overheal with Rank 7
+> 
+> `( ( ( spellpower / 3.5 * 1.5 + base damage ) as sp - damage over time tick amount / sp * mana cost * time of fight / cast time ) )`
+> 
+> `(( ( 900 / 3.5 * 1.5 ) + 901) as sp - 500 / sp * 380 * 120 / 1.5`
+
 ---
 
 ## Spellpower to Mana Comparison
@@ -67,6 +73,7 @@ If Flash Heal is cast 80 times over the course of the 2 minutes, this will resul
 
 This graph shows an interesting phenomenon that seems counterintuitive. Lower ranked spells respond more to increased spellpower, or rather spellpower has more impact on lower ranked spells. Here are some observations:
 - Lower ranked spells cost less mana in absolute terms. Therefore, they have more to gain from increased spellpower.
+- Lower ranked spells are significantly less efficient than higher ranks, but adding spellpower also increases their efficiency more quickly than higher ranks.
 - This view of the data proves that downranking can be a viable, efficient strategy so long as there is enough increased spellpower.
 
 Note that the distance between ranks close as the rank becomes higher. This suggests an interesting detail observed in the subsequent section.
