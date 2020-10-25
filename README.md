@@ -97,4 +97,4 @@ Healers have powerful tools to keep the raid alive and moving, and spellpower ha
   - A well-geared priest could target 800 hitpoints by using Flash Heal rank 3, while a lesser geared priest may have to use rank 6 or rank 7.
   - Note: the purpose of this is to encourage healers to think in "tiers" of spells and move away from the "one spell fits all" approach.
 - Create an Innervate priority list for Druids so they know who to focus on to get the best, or most immediate, return.
-  - An interesting point: it seems obvious Druids should target the best geared priests for Innervate. However, it may be equally or more important to target priests that are not well geared (and run out of mana first) so that the overall absolute healing is still high.
+  - An interesting point: it seems obvious Druids should target the best geared priests for Innervate. However, it may be equally or more important to target priests who run out of mana first (and presumably are not the best geared) so that the overall absolute healing is still high.
