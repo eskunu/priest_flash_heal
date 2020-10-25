@@ -3,8 +3,7 @@ View various attributes of spellpower, mana, and ranks for Priest Flash Heal spe
 
 ## An Introduction
 
-In the game of 21 players draw randomly sorted cards until the sum of their cards equals 21, or have the highest sum among the players without going over 21.
-Healers face an interesting problem: Like the game of 21 they must be able to heal a damaged player as close to full as possible without (significant) overhealing. This game occurs literally thousands of times over the course of a single raid, where overhealing may cause the healer to run out of mana (its primary resource) when the raid needs it most. Raid healers have an added difficulty in that they have to coordinate with each other to reduce overhealing; it would be like playing 21 together and some penalty is incurred by the team if anyone goes over 21.
+In the game of 21 players draw randomly sorted cards until the sum of their cards equals 21, or have the highest sum among the players without going over. Healers face an interesting problem: Like the game of 21 they must be able to heal a damaged player as close to full as possible without (significant) overhealing. This game occurs literally thousands of times over the course of a single raid, where overhealing may cause the healer to run out of mana (its primary resource) when the raid needs it most. Raid healers have an added difficulty in that they have to coordinate with each other to reduce overhealing; it would be like playing 21 together and some penalty is incurred by the team if anyone on the team goes over.
 
 Significant overhealing is inefficient and reduces the healer's endurance during a fight, increases raid downtime to drink, and may impose real cost in the need to purchase more consumables (both on the part of the healer as well as those being - or would be - healed).
 
@@ -23,8 +22,6 @@ The graph above demonstrates the mana efficiency of each rank of Flash Heal. Int
 
 While these points are obvious, a game of 21 can't be won by playing only the lowest, or the highest, cards. Some combination or compromise is required to ensure the sum doesn't go over 21.
 
----
-
 ## Spellpower to Healing Comparison
 
 Spellpower has a powerful impact on healing as it is essentially an additive, free effect on top of the base heal. The spellpower coefficient is calculated as: *spellpower / 3.5 * 1.5*; if the spellpower is 500 then the effective spell coefficient is ~214 added healing, bringing the power of Flash Heal Rank 7 to 1,115 *at the same mana cost* as the base spell. It's mana to health, or efficiency, ratio increases from 2.37 to 2.93.
@@ -42,6 +39,9 @@ Spellpower has a powerful impact on healing as it is essentially an additive, fr
 > `( ( 500 / 3.5 * 1.5 ) + 901 / 380 = 2.93`
 
 
+
+This chart (below) shows the benefits of spellpower to healing for each rank of spell.
+
 ![text](images/Figure_2.png)
 
 While spellpower increases the overall healing as well as the mana to healing ratio, it can create scenarios for overhealing. Considering the following  example:
@@ -49,12 +49,12 @@ While spellpower increases the overall healing as well as the mana to healing ra
 A damage-over-time spell is applied to a player at a rate of 500 damage per one and a half seconds for 2 minutes. A Priest with 900 spellpower may choose to cast one of three ranks:
 - Rank 1 for ~280 healing at 125 mana
     - Results in no overhealing and one dead player
-- Rank 4 for ~820 healing at 215 mana
-    - Results in overhealing at a cost of 115 mana
-- Rank 7 for ~1200+ healing at 380 mana
-    - Results in overhealing at a cost of 222 mana
+- Rank 4 for ~840 healing at 215 mana
+    - Results in overhealing at a cost of 86 mana
+- Rank 7 for ~1300+ healing at 380 mana
+    - Results in overhealing at a cost of 232 mana
 
-If Flash Heal is cast 80 times over the course of the 2 minutes, this will result in 9,200 and 17,760 mana used in overhealing for Rank 4 and Rank 7, respectively. That mana equates to 35,088 and 56,084 health.
+If Flash Heal is cast 80 times over the course of the 2 minutes, this will result in 6,915 and 18,597 mana used in overhealing for Rank 4 and Rank 7, respectively. That mana equates to 27,016 and 62,936 health.
 
 > Example: Mana Cost for Overheal with Rank 7
 > 
@@ -62,7 +62,6 @@ If Flash Heal is cast 80 times over the course of the 2 minutes, this will resul
 > 
 > `(( ( 900 / 3.5 * 1.5 ) + 901) as sp - 500 / sp * 380 * 120 / 1.5`
 
----
 
 ## Spellpower to Mana Comparison
 
@@ -84,4 +83,4 @@ Note that the distance between ranks close as the rank becomes higher. This sugg
 
 ![text](images/Figure_4.png)
 
-While the previous section shows that spellpower has a greater effect on lower ranked spells, the above graph shows that absolute healing at higher ranks increases more quickly with less mana efficiency.
+While the previous section showed that spellpower has a greater effect on lower ranked spells, the above graph shows that absolute healing at higher ranks increases more quickly without as much mana efficiency. 
