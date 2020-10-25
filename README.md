@@ -20,7 +20,7 @@ A Priest's Flash Heal Rank 7 spell heals an average of 901 hitpoints at a cost o
 
 The graph above demonstrates the mana efficiency of each rank of Flash Heal. Interestingly, higher ranked base spells are increasingly more efficient to use, but cost more mana. As long as there is sufficient mana and assuming there is no penalty for overhealing, casting with the highest ranked spell is the most efficient.
 - If the emphasis is healing amount, higher ranks are better
-- If the emphasis is mana conservation, especially in longer fights or where damage relatively light, lower ranks are better
+- If the emphasis is mana conservation, especially in longer fights or where damage is relatively light, lower ranks are better
 
 While these points are obvious, a game of 21 can't be won by playing only the lowest, or the highest, cards. Some combination or compromise is required to ensure the sum doesn't go over 21.
 
@@ -97,4 +97,4 @@ Healers have powerful tools to keep the raid alive and moving, and spellpower ha
   - A well-geared priest could target 800 hitpoints by using Flash Heal rank 3, while a lesser geared priest may have to use rank 6 or rank 7.
   - Note: the purpose of this is to encourage healers to think in "tiers" of spells and move away from the "one spell fits all" approach.
 - Create an Innervate priority list for Druids so they know who to focus on to get the best, or most immediate, return.
-  - An interesting point: it seems obvious Druids should target the best geared priests for Innervate. However, it may be equally or more important to target priests that are not well geared so that the overall absolute healing is still high.
+  - An interesting point: it seems obvious Druids should target the best geared priests for Innervate. However, it may be equally or more important to target priests that are not well geared (and run out of mana first) so that the overall absolute healing is still high.
