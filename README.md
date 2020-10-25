@@ -15,7 +15,7 @@ In the course of this exercise we will explore the most mana efficient spells by
 
 A Priest's Flash Heal Rank 7 spell heals an average of 901 hitpoints at a cost of 380 mana, a ratio of 2.37 hitpoints per mana. The higher the ratio the more mana efficient the spell.
 
-![text](https://github.com/eskunu/priest_flash_heal/blob/main/images/Figure_1.png)
+![text](https://github.com/eskunu/priest_flash_heal/blob/master/images/Figure_1.png)
 
 The graph above demonstrates the mana efficiency of each rank of Flash Heal. Interestingly, higher ranked spells are increasingly more efficient to use, but cost more mana. As long as there is sufficient mana and assuming there is no penalty for overhealing, casting with the highest ranked spell is the most efficient.
 - If the emphasis is healing amount, higher ranks are better
@@ -42,7 +42,7 @@ Spellpower has a powerful impact on healing as it is essentially an additive, fr
 > `( ( 500 / 3.5 * 1.5 ) + 901 / 380 = 2.93`
 
 
-![text](https://github.com/eskunu/priest_flash_heal/blob/main/images/Figure_2.png)
+![text](https://github.com/eskunu/priest_flash_heal/blob/master/images/Figure_2.png)
 
 While spellpower increases the overall healing as well as the mana to healing ratio, it can create scenarios for overhealing. Considering the following  example:
 
@@ -63,7 +63,7 @@ If Flash Heal is cast 80 times over the course of the 2 minutes, this will resul
 ### Disclaimer: This section may be misintrepeted to mean lower ranked spells are more efficient than higher ranked spells. This is not true in itself. However, lower ranked spells are more efficient when coupled with increased spellpower.
 
 
-![text](https://github.com/eskunu/priest_flash_heal/blob/main/images/Figure_3.png)
+![text](https://github.com/eskunu/priest_flash_heal/blob/master/images/Figure_3.png)
 
 This graph shows an interesting phenomenon that seems counterintuitive. Lower ranked spells respond more to increased spellpower, or rather spellpower has more impact on lower ranked spells. Here are some observations:
 - Lower ranked spells cost less mana in absolute terms. Therefore, they have more to gain from increased spellpower.
@@ -75,6 +75,6 @@ Note that the distance between ranks close as the rank becomes higher. This sugg
 
 ## Mana to Healing Comparison
 
-![text](https://github.com/eskunu/priest_flash_heal/blob/main/images/Figure_4.png)
+![text](https://github.com/eskunu/priest_flash_heal/blob/master/images/Figure_4.png)
 
 While the previous section shows that spellpower has a greater effect on lower ranked spells, the above graph shows that absolute healing at higher ranks increases more quickly with less mana efficiency.
